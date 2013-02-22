@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hello_world" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tvNome"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:padding="15dp"
+        android:text="Nome"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/etNome"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="Insira o nome aqui"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHint="#BEBEBE" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/tvIdade"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:padding="15dp"
+        android:text="Idade"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/etIdade"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="Insira a idade aqui"
+        android:inputType="number"
+        android:textColor="#000000"
+        android:textColorHint="#BEBEBE" >
+    </EditText>
+
+    <Button
+        android:id="@+id/btGravar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="Gravar" />
+
+    <Button
+        android:id="@+id/btVer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="Ver pessoas gravadas" />
+
+</LinearLayout>
